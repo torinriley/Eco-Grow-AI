@@ -93,7 +93,7 @@ def optimize_for_specific_crop(crop_type, label_encoders, scaled_numericals, cat
 
     crop_type = optimized_params_decoded['Crop Type']
     if optimized_params_decoded['Variety'] not in crop_variety_dict[crop_type]:
-        optimized_params_decoded['Variety'] = crop_variety_dict[crop_type][0]  # Assign first valid variety
+        optimized_params_decoded['Variety'] = crop_variety_dict[crop_type][0] 
 
     return optimized_params_decoded, -result.fun
 
