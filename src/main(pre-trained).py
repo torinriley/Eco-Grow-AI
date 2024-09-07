@@ -8,7 +8,6 @@ from scipy.optimize import differential_evolution
 model_path = 'xgb_model.pkl'
 xgb_model = joblib.load(model_path)
 
-# Load expanded data (this part is to ensure we have the necessary encoders and scaler)
 crop_data = pd.read_csv('crop_data.csv')
 climate_data = pd.read_csv('climate_data.csv')
 
