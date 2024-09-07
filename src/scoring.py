@@ -17,7 +17,7 @@ def calculate_resilience_score(row):
     score = 0
     for feature, weight in weights.items():
         score += row[feature] * weight
-    return score * 100  # Normalize to a 100-point scale
+    return score * 100
 
 crop_data['Calculated Resilience Score'] = crop_data.apply(calculate_resilience_score, axis=1)
 
